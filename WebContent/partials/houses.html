@@ -1,0 +1,7 @@
+<input type="text" ng-model="searchString"></input>
+
+<div ng-repeat="perfumeHouse in perfumeHouses | filter: searchString" class="row">
+	<div class="col-md-12">
+		<a href="#house/{{perfumeHouse.id}}">{{perfumeHouse.name}}</a>
+	</div>
+</div>

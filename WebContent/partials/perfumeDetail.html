@@ -1,0 +1,48 @@
+<h4>{{perfumeDetails.name}} for {{perfumeDetails.gender}}</h4> 
+
+<div>
+	{{perfumeDetails.description}}
+</div>
+
+<div>
+	<h6>Notes</h6>
+	
+	<div ng-show="perfumeDetails.topNotes.length > 0">
+		Top notes
+		<div>
+			<img alt="{{topNote}}" ng-repeat="topNote in perfumeDetails.topNotes" src="a.jpg"></img>
+		</div>
+	</div>
+	
+	<div ng-show="perfumeDetails.middleNotes.length > 0">
+		Middle notes
+		
+		<div>
+			<img alt="{{middleNote}}" ng-repeat="middleNote in perfumeDetails.middleNotes" src="a.jpg"></img>
+		</div>
+		
+	</div>
+	
+	<div ng-show="perfumeDetails.baseNotes.length > 0">
+		Base notes
+		
+		<div>
+			<img alt="{{baseNote}}" ng-repeat="baseNote in perfumeDetails.baseNotes" src="a.jpg"></img>
+		</div>
+		
+	</div>
+	
+	<div ng-show="perfumeDetails.notes.length > 0">
+		Notes
+		
+		<div>
+			<img alt="{{note}}" ng-repeat="note in perfumeDetails.notes" src="a.jpg"></img>
+		</div>
+	</div>
+	
+	<feedback perfume="perfumeDetails"></feedback>
+</div>
+
+
+
+

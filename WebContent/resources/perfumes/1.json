@@ -1,0 +1,11 @@
+{
+	"id" : 1,
+	"name" : "Intense Cafe",
+	"description": "Intense cafe description",
+	"year" : 2014,
+	"gender": "Women and Men",
+	"notes" : ["a"],
+	"topNotes" : ["b"],
+	"middleNotes" : ["c"],
+	"baseNotes": ["d"]
+}

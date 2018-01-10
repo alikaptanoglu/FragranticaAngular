@@ -1,0 +1,13 @@
+<div>
+	{{perfumeHouseDetails.name}}
+</div>
+
+<div>
+	{{perfumeHouseDetails.description}}
+</div>
+
+<div class="row" ng-repeat="perfume in perfumeHouseDetails.perfumes" ng-class="getRowClass(perfume.gender)">
+	<a class="col-md-4" href='#perfumeDetail/{{perfume.id}}'>{{perfume.name}}</a>
+	<div class="col-md-4">{{perfume.gender}}</div>
+	<div class="col-md-4">{{perfume.year}}</div>
+</div>
